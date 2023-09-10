@@ -1,0 +1,79 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Gestion_mediatheque - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x40c /fo"Debug/Gestion_mediatheque.res" /d "_DEBUG" /d "_AFXDLL" "F:\Gestion_mediatheque  v4\Gestion_mediatheque.rc"" 
+Creating temporary file "C:\DOCUME~1\poste\LOCALS~1\Temp\RSP95.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Gestion_mediatheque.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\Gestion_mediatheque  v4\Adherent.cpp"
+"F:\Gestion_mediatheque  v4\Cd.cpp"
+"F:\Gestion_mediatheque  v4\Dlg_Adh.cpp"
+"F:\Gestion_mediatheque  v4\Dlg_EmpRest.cpp"
+"F:\Gestion_mediatheque  v4\Dlg_Ouvr.cpp"
+"F:\Gestion_mediatheque  v4\Exemplaire.cpp"
+"F:\Gestion_mediatheque  v4\Gestion_mediatheque.cpp"
+"F:\Gestion_mediatheque  v4\Gestion_mediathequeDoc.cpp"
+"F:\Gestion_mediatheque  v4\Gestion_mediathequeView.cpp"
+"F:\Gestion_mediatheque  v4\Livre.cpp"
+"F:\Gestion_mediatheque  v4\MainFrm.cpp"
+"F:\Gestion_mediatheque  v4\Oeuvre.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\poste\LOCALS~1\Temp\RSP95.tmp" 
+Creating temporary file "C:\DOCUME~1\poste\LOCALS~1\Temp\RSP96.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Gestion_mediatheque.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\Gestion_mediatheque  v4\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\poste\LOCALS~1\Temp\RSP96.tmp" 
+Creating temporary file "C:\DOCUME~1\poste\LOCALS~1\Temp\RSP97.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Gestion_mediatheque.pdb" /debug /machine:I386 /out:"Debug/Gestion_mediatheque.exe" /pdbtype:sept 
+".\Debug\Adherent.obj"
+".\Debug\Cd.obj"
+".\Debug\Dlg_Adh.obj"
+".\Debug\Dlg_EmpRest.obj"
+".\Debug\Dlg_Ouvr.obj"
+".\Debug\Exemplaire.obj"
+".\Debug\Gestion_mediatheque.obj"
+".\Debug\Gestion_mediathequeDoc.obj"
+".\Debug\Gestion_mediathequeView.obj"
+".\Debug\Livre.obj"
+".\Debug\MainFrm.obj"
+".\Debug\Oeuvre.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Gestion_mediatheque.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\poste\LOCALS~1\Temp\RSP97.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Cd.cpp
+Dlg_Adh.cpp
+Dlg_EmpRest.cpp
+Dlg_Ouvr.cpp
+Exemplaire.cpp
+Gestion_mediatheque.cpp
+Gestion_mediathequeDoc.cpp
+Gestion_mediathequeView.cpp
+Livre.cpp
+MainFrm.cpp
+Oeuvre.cpp
+Generating Code...
+Skipping... (no relevant changes detected)
+Adherent.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Gestion_mediatheque.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

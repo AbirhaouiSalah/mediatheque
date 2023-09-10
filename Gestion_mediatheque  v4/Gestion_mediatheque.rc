@@ -1,0 +1,567 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Gestion_mediatheque.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.fra\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.fra\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Gestion_mediatheque.ico"
+IDR_YOUMATYPE           ICON    DISCARDABLE     "res\\Gestion_mediathequeDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Fichier"
+    BEGIN
+        MENUITEM "&Nouveau\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "&Ouvrir...\tCtrl+O",          ID_FILE_OPEN
+        MENUITEM "&Enregistrer\tCtrl+S",        ID_FILE_SAVE
+        MENUITEM "En&registrer sous...",        ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Imprimer...\tCtrl+P",        ID_FILE_PRINT
+        MENUITEM "Aperçu a&vant impression",    ID_FILE_PRINT_PREVIEW
+        MENUITEM "C&onfiguration de l'impression...", ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Fichier récent",              ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Quitter",                    ID_APP_EXIT
+    END
+    POPUP "&Edition"
+    BEGIN
+        MENUITEM "&Annuler\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "&Couper\tCtrl+X",             ID_EDIT_CUT
+        MENUITEM "&Copier\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "C&oller\tCtrl+V",             ID_EDIT_PASTE
+    END
+    POPUP "&Affichage"
+    BEGIN
+        MENUITEM "&Barre d'outils",             ID_VIEW_TOOLBAR
+        MENUITEM "Barre d'é&tat",               ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Gestion"
+    BEGIN
+        MENUITEM "&Oeuvres",                    ID_OEUVRES
+        MENUITEM "&Adhérent",                   ID_ADH
+    END
+    POPUP "&Emprunt"
+    BEGIN
+        MENUITEM "Emprunter un exemplaire",     ID_EMPRUNTER
+        MENUITEM "Restituer un exemplaire",     ID_RESTITUER
+    END
+    POPUP "&?"
+    BEGIN
+        MENUITEM "&A propos de Gestion_mediatheque...", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 225, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "A propos de Gestion_mediatheque"
+FONT 12, "Georgia"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "Gestion_mediatheque version 1.4",IDC_STATIC,63,16,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008 by RAFII et CHARAF",IDC_STATIC,54,50,
+                    135,8
+    LTEXT           "Tous droits réservés",IDC_STATIC,98,64,64,8
+END
+
+IDD_GESTION_MEDIATHEQUE_FORM DIALOGEX 0, 0, 248, 188
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_CHILD
+EXSTYLE WS_EX_TRANSPARENT
+FONT 11, "Georgia", 0, 0, 0x1
+BEGIN
+    LTEXT           "Mini Projet en C++",IDC_STATIC,89,20,60,10
+    LTEXT           "Sujet                        :                      Gestion d'une médiathèque",
+                    IDC_STATIC,16,50,183,8
+    LTEXT           "Projet realisè par   :                      RAFII           Et          CHARAF",
+                    IDC_STATIC,14,93,215,8
+    LTEXT           "projet encadrè par :                               Mlle MAHDAD",
+                    IDC_STATIC,10,141,165,8
+    LTEXT           "Année :         2007-2008",IDC_STATIC,144,174,80,10
+END
+
+IDD_DLG_ADH DIALOG DISCARDABLE  0, 0, 475, 206
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Gestion des adhérents"
+FONT 10, "Georgia"
+BEGIN
+    EDITTEXT        IDC_MAT,79,12,122,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NOM,79,27,122,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PRENOM,79,42,122,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AGE,79,57,122,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADR,79,72,122,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMAIL,79,87,122,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "<<",IDC_PREV,10,106,35,10
+    PUSHBUTTON      "Ajouter",IDC_ADD,50,106,35,10
+    PUSHBUTTON      "Modifier",IDC_MODIFY,90,106,35,10
+    PUSHBUTTON      "Supprimer",IDC_DELETE,130,106,35,10
+    PUSHBUTTON      ">>",IDC_NEXT,171,106,35,10
+    EDITTEXT        IDC_SEARCH,82,155,60,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Rechercher",IDC_FIND,92,175,40,10
+    PUSHBUTTON      "Lister",IDC_LISTER,313,177,35,10
+    LTEXT           "Nom                      :",IDC_STATIC,19,27,50,8
+    LTEXT           "Age                        :",IDC_STATIC,19,57,50,8
+    LTEXT           "Prénom                :",IDC_STATIC,19,42,55,8
+    LTEXT           "Adresse               :",IDC_STATIC,19,72,50,8
+    LTEXT           "Email                    :",IDC_STATIC,19,87,50,8
+    LTEXT           "Matricule            :",IDC_STATIC,19,12,50,8
+    GROUPBOX        "Recherche d'un adhérent",IDC_STATIC,62,130,100,65
+    LTEXT           "Donner son matricule :",IDC_STATIC,77,140,75,10
+    GROUPBOX        "Liste des adhérents",IDC_STATIC,210,16,258,179
+    CONTROL         "List1",IDC_LIST_ADH,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,216,29,242,143
+END
+
+IDD_OEUVRE DIALOG DISCARDABLE  0, 0, 430, 311
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Gestion des oeuvres"
+FONT 10, "Georgia"
+BEGIN
+    EDITTEXT        IDC_TITRE,184,12,122,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RESUME,184,27,122,12,ES_AUTOHSCROLL
+    CONTROL         "Livre",IDC_RADIO_LIVRE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,139,62,33,10
+    CONTROL         "CD",IDC_RADIO_CD,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,183,63,25,10
+    PUSHBUTTON      "Valider",IDC_VALID,224,62,60,10
+    EDITTEXT        IDC_ISBN,70,92,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AUTEUR,169,92,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LREF1,70,107,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LREF2,169,107,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LREF3,120,128,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DUREE,275,95,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ARTISTE,379,95,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CREF1,275,110,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CREF2,380,110,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CREF3,325,130,26,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Ajouter",IDC_AJOUT,273,280,35,10
+    PUSHBUTTON      "Lister",IDC_LISTER,318,280,35,10
+    PUSHBUTTON      "<<",IDC_PREV,15,155,35,10
+    PUSHBUTTON      "Modifier",IDC_MODIF,60,155,35,10
+    PUSHBUTTON      "Supprimer",IDC_SUPP,115,155,35,10
+    PUSHBUTTON      ">>",IDC_NEXT,165,155,35,10
+    PUSHBUTTON      "<<",IDC_PREVC,215,155,35,10
+    PUSHBUTTON      "Modifier",IDC_MODIFC,268,155,35,10
+    PUSHBUTTON      "Supprimer",IDC_SUPPC,323,155,35,10
+    LTEXT           "Isbn                      :",IDC_STATIC,16,92,50,10
+    LTEXT           "Titre                    :",IDC_STATIC,118,12,48,8
+    LTEXT           "Résumé              :",IDC_STATIC,118,27,49,8
+    GROUPBOX        "Livre",IDC_STATIC,11,82,194,68
+    GROUPBOX        "Cd",IDC_STATIC,211,82,204,68
+    LTEXT           "nom de l'auteur:",IDC_STATIC,114,92,50,10
+    LTEXT           "Durée                   :",IDC_STATIC,221,95,50,10
+    LTEXT           "nom de l'artiste:",IDC_STATIC,324,95,50,10
+    GROUPBOX        "Type d'oeuvre",IDC_STATIC,127,49,168,30
+    CONTROL         "List3",IDC_LIST_L,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,10,185,195,65
+    CONTROL         "List4",IDC_LIST_C,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,217,185,195,65
+    GROUPBOX        "Recherche d'un oeuvre",IDC_STATIC,10,265,195,34
+    LTEXT           "Donner son titre :",IDC_STATIC,17,281,55,10
+    EDITTEXT        IDC_FIND,80,279,39,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Chercher",IDC_SEARCH,126,280,60,10
+    LTEXT           "Liste des Livres",IDC_STATIC,80,170,49,8
+    LTEXT           "Liste des Cds",IDC_STATIC,290,170,41,8
+    PUSHBUTTON      ">>",IDC_NEXTC,375,155,35,10
+    LTEXT           "Référence 1        :",IDC_STATIC,15,107,50,10
+    LTEXT           "Référence 2       :",IDC_STATIC,114,107,50,10
+    LTEXT           "Référence 3       :",IDC_STATIC,65,128,50,10
+    LTEXT           "Référence 1        :",IDC_STATIC,220,110,50,10
+    LTEXT           "Référence 2       :",IDC_STATIC,325,110,50,10
+    LTEXT           "Référence 3       :",IDC_STATIC,270,130,50,10
+END
+
+IDD_EMPR_REST DIALOG DISCARDABLE  0, 0, 280, 158
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Emprunter ou restituer un exemplaire"
+FONT 12, "Georgia"
+BEGIN
+    COMBOBOX        IDC_COM_ADH,131,15,100,50,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         IDC_LISTExe,131,35,100,50,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMB_EMPL,16,110,65,31,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Emprunter",IDC_EMPRUNTL,25,131,45,10
+    COMBOBOX        IDC_COMB_EMPC,96,110,65,31,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Emprunter",IDC_EMPRUNTC,105,131,45,10
+    COMBOBOX        IDC_COMB_RES,186,110,65,32,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Restituer",IDC_REST,196,130,45,10
+    LTEXT           "Matricule de l'adhérent:",IDC_STATIC,15,15,75,10
+    LTEXT           "Liste des exemplaires  :",IDC_STATIC,15,35,75,10
+    GROUPBOX        "Emprunt d'un livre",IDC_STATIC,10,95,75,50
+    GROUPBOX        "Restitution d'un exemplaire",IDC_STATIC,171,95,95,50
+    GROUPBOX        "Emprunt d'un cd",IDC_STATIC,90,95,75,50
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040C04B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Application MFC Gestion_mediatheque\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Gestion_mediatheque\0"
+            VALUE "LegalCopyright", "Copyright (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Gestion_mediatheque.EXE\0"
+            VALUE "ProductName", "Application Gestion_mediatheque\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_GESTION_MEDIATHEQUE_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 241
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_DLG_ADH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 468
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_OEUVRE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 423
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 304
+    END
+
+    IDD_EMPR_REST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Gestion_mediatheque\n\nyouma\nFichiers Gestio (*.goy)\n.goy\nGestionmediatheque.Document\nyouma Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Gestion_mediatheque"
+    AFX_IDS_IDLEMESSAGE     "Prêt"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "MAJ"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "DEF"
+    ID_INDICATOR_OVR        "ECR"
+    ID_INDICATOR_REC        "ENR"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Crée un nouveau document\nNouveau"
+    ID_FILE_OPEN            "Ouvre un document existant\nOuvrir"
+    ID_FILE_CLOSE           "Ferme le document actif\nFermer"
+    ID_FILE_SAVE            "Enregistre le document actif\nEnregistrer"
+    ID_FILE_SAVE_AS         "Enregistre le document actif sous un nouveau nom\nEnregistrer sous"
+    ID_FILE_PAGE_SETUP      "Change les options d'impression\nMise en page"
+    ID_FILE_PRINT_SETUP     "Change les options d'imprimante et d'impression\nConfiguration de l'impression"
+    ID_FILE_PRINT           "Imprime le document actif\nImprimer"
+    ID_FILE_PRINT_PREVIEW   "Affiche des pages entières\nAperçu avant impression"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Affiche des informations sur le programme, le numéro de version et le copyright\nA propos de"
+    ID_APP_EXIT             "Ferme l'application ; propose d'enregistrer les documents\nQuitter"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Ouvre ce document"
+    ID_FILE_MRU_FILE2       "Ouvre ce document"
+    ID_FILE_MRU_FILE3       "Ouvre ce document"
+    ID_FILE_MRU_FILE4       "Ouvre ce document"
+    ID_FILE_MRU_FILE5       "Ouvre ce document"
+    ID_FILE_MRU_FILE6       "Ouvre ce document"
+    ID_FILE_MRU_FILE7       "Ouvre ce document"
+    ID_FILE_MRU_FILE8       "Ouvre ce document"
+    ID_FILE_MRU_FILE9       "Ouvre ce document"
+    ID_FILE_MRU_FILE10      "Ouvre ce document"
+    ID_FILE_MRU_FILE11      "Ouvre ce document"
+    ID_FILE_MRU_FILE12      "Ouvre ce document"
+    ID_FILE_MRU_FILE13      "Ouvre ce document"
+    ID_FILE_MRU_FILE14      "Ouvre ce document"
+    ID_FILE_MRU_FILE15      "Ouvre ce document"
+    ID_FILE_MRU_FILE16      "Ouvre ce document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Passe au volet de fenêtre suivant\nVolet suivant"
+    ID_PREV_PANE            "Revient au volet précédent\nVolet précédent"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Réorganise les fenêtres en une mosaïque\nMosaïque"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Efface la sélection\nEffacer"
+    ID_EDIT_CLEAR_ALL       "Efface tout\nEffacer tout"
+    ID_EDIT_COPY            "Copie la sélection et la place dans le Presse-papiers\nCopier"
+    ID_EDIT_CUT             "Supprime la sélection et la place dans le Presse-papiers\nCouper"
+    ID_EDIT_FIND            "Recherche le texte spécifié\nRechercher"
+    ID_EDIT_PASTE           "Insère le contenu du Presse-papiers\nColler"
+    ID_EDIT_REPEAT          "Répète la dernière action\nRépéter"
+    ID_EDIT_REPLACE         "Remplace le texte spécifique par un texte différent\nRemplacer"
+    ID_EDIT_SELECT_ALL      "Sélectionne le document entier\nSélectionner tout"
+    ID_EDIT_UNDO            "Annule la dernière action\nAnnuler"
+    ID_EDIT_REDO            "Rétablit l'action précédemment annulée\nRétablir"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Affiche ou masque la barre d'outils\nBarre d'outils"
+    ID_VIEW_STATUS_BAR      "Affiche ou masque la barre d'état\nBarre d'état"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change la taille de la fenêtre"
+    AFX_IDS_SCMOVE          "Change la position de la fenêtre"
+    AFX_IDS_SCMINIMIZE      "Réduit la fenêtre en icône"
+    AFX_IDS_SCMAXIMIZE      "Agrandit la fenêtre au format de l'écran"
+    AFX_IDS_SCNEXTWINDOW    "Passe à la fenêtre de document suivante"
+    AFX_IDS_SCPREVWINDOW    "Passe à la fenêtre de document précédente"
+    AFX_IDS_SCCLOSE         "Ferme la fenêtre active et propose l'enregistrement des documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restaure la fenêtre à sa taille d'origine"
+    AFX_IDS_SCTASKLIST      "Active la liste des tâches"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Ferme le mode d'aperçu avant impression\nFermer l'aperçu"
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Gestion_mediatheque.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.fra\afxres.rc"          // Standard components
+#include "l.fra\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
